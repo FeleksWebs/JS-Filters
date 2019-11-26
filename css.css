@@ -1,0 +1,47 @@
+
+.Center{
+    display: block; 
+    border: 1px solid black;
+    position: relative;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 5px;
+}
+
+#form-button ,#form-txt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#form-button{
+    border-radius: 0;
+}
+.Center2{
+    display: block; 
+    background-color: blue;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txt{
+    margin:0;
+    text-align: center;
+    
+}
+#testy{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
