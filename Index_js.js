@@ -21,24 +21,28 @@ function getValues(){
             var arrFirst = arrSplit[0];
             var arrSlice = arrSplit.slice(-1)[0];    
             var arrList = [arrValue,arrSplit,arrLength,arrFirst,arrSlice]
-            var Li_Name = document.createElement("li");
-            document.body.appendChild(Li_Name)
-            Li_Name.innerHTML = arrList[i]
+
+            var objTo = document.getElementById('testy')
+            var divtest = document.createElement("div")
+            objTo.style.boxShadow = "3px 5px"
+            divtest.innerHTML = arrList[i]
+            objTo.appendChild(divtest)
+            
             if (i === 0){
-                Li_Name.innerHTML = "The name of the string is " +arrList[i]
+                divtest.innerHTML = "<p class='txt'>The name of the string is " +arrList[i]+"</p>"
             }else if( i === 1){
-                Li_Name.innerHTML = "The string contains these letters " +arrList[i]
+                divtest.innerHTML = "<p class='txt'>The string contains these letters " +arrList[i]+ '</p>'
             }else if(i === 2){
-                Li_Name.innerHTML = "The string consists of " +arrList[i] +" characters"
+                divtest.innerHTML = "<p class='txt'>The string consists of " +arrList[i] +" characters </p>"
             }else if (i === 3){
-                Li_Name.innerHTML = "Where the first character is " +arrList[i]
+                divtest.innerHTML = "<p class='txt'>Where the first character is " +arrList[i]+'</p>'
             }else if (i === 4){
-                Li_Name.innerHTML = "Also where the last character is " +arrList[i]
+                divtest.innerHTML = "<p class='txt'>Also where the last character is " +arrList[i]+'</p>'
             }
     
             i++
             Timeout()
-            
+
         }
             console.log(i)
         },1000)
