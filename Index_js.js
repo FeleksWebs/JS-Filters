@@ -24,7 +24,7 @@ function getValues(){
 
             var objTo = document.getElementById('testy')
             var divtest = document.createElement("div")
-            objTo.style.boxShadow = "3px 5px rgb(173, 216, 230)"
+            objTo.style.boxShadow = "-1px 2px 5px 3px rgba(0,0,0,0.34)"
             divtest.innerHTML = arrList[i]
             objTo.appendChild(divtest)
             
