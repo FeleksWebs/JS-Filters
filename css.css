@@ -1,14 +1,15 @@
 
 .Center{
     display: block; 
-    border: 1px solid rgb(173, 216, 230);
     position: relative;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 3px 5px rgb(173, 216, 230);
+    -webkit-box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.34);
+    -moz-box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.34);
+    box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.34);
 }
 
 #form-button ,#form-txt{
@@ -16,11 +17,28 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    border-radius: 10px;
+    
 }
 #form-button{
-    border-radius: 0;
+    height: 25px;
+    width: 60px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+    border-radius: 10px;
 }
+
+#form-button:hover{
+    background-color: white;
+    border-color: #3CBC8D;
+    border-style: solid;
+    border-width: 1px;
+    color:  #3CBC8D;
+    cursor: pointer;
+    
+}
+
 .Center2{
     display: block; 
     background-color: blue;
@@ -37,11 +55,10 @@
     
 }
 #testy{
-    border: 1px solid rgb(173, 216, 230);
+    
     border-radius: 10px;
     margin-top: 10px;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-    
 }
